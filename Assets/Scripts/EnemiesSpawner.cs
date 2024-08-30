@@ -27,6 +27,8 @@ public class EnemiesSpawner : MonoBehaviour
     public TMPro.TMP_Text waveText;
     public GameObject waveUIObj;
 
+    public List<GameObject> bossWaveObjs = new List<GameObject>();
+
     float spawnTimer, randTime;
     float waveTimer;
     int waveNo = 0;
@@ -40,6 +42,13 @@ public class EnemiesSpawner : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKey(KeyCode.B) && waveNo != 9)
+        {
+            waveNo = 9;
+            waveTimer = 0f;
+            waitingForSpawn = false;
+            DoBossWave();
+        }
         if(!waitingForSpawn)
         {
             waitingForSpawn = true;
@@ -62,14 +71,34 @@ public class EnemiesSpawner : MonoBehaviour
             waveNo ++;
             waveTimer = 0f;
             waitingForSpawn = false;
+            if(waveNo == 9)
+            {
+                DoBossWave();
+                return;
+            }
             ShowWaveText();
+        }
+    }
+
+    void DoBossWave()
+    {
+        ShowWaveText();
+        foreach(GameObject obj in bossWaveObjs)
+        {
+            obj.SetActive(true);
         }
     }
 
     void ShowWaveText()
     {
         waveUIObj.SetActive(false);
-        waveText.text = "Wave " + (waveNo + 1).ToString();
+        if(waveNo == 9)
+        {
+            waveText.text = "BOSS WAVE";
+        }else
+        {
+            waveText.text = "Wave " + (waveNo + 1).ToString();
+        }
         waveUIObj.SetActive(true);
     }
 

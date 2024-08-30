@@ -28,7 +28,6 @@ public class EnemyAI : MonoBehaviour
     bool alive, attacking, grunting, chasing;
     public GameObject deathFX;
     public List<AudioClip> deathSounds = new List<AudioClip>();
-    public AudioClip angrySound;
 
     [Range(0f,1f)]
     public float gruntingVolume;

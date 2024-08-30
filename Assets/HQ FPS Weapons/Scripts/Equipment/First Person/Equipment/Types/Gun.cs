@@ -172,8 +172,18 @@ namespace HQFPSWeapons
 		{
 			if(hitInfo.transform.root.CompareTag("Enemy"))
 			{
+				BossAI bossAI = hitInfo.transform.root.GetComponent<BossAI>();
+                if(bossAI != null)
+                {
+                    bossAI.TakeDamage(damage, hitInfo.collider);
+                }
+
 				EnemyAI enemyAI = hitInfo.transform.root.GetComponent<EnemyAI>();
-				enemyAI.TakeDamage(damage,hitInfo.collider);
+                if(enemyAI != null)
+                {
+				    enemyAI.TakeDamage(damage, hitInfo.collider);
+                }
+				
 				var vnorm = new Quaternion(hitInfo.normal.z, hitInfo.normal.y, -hitInfo.normal.x, 1);
 				Instantiate(bloodFX,hitInfo.point,vnorm);
 				return true;

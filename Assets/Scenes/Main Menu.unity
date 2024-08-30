@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0722843, g: 0.033884153, b: 0.030469924, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -563,37 +562,42 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Mouse - Camera
+  m_text: '<color="green">T - Hellpoints Cheat</color>
+
+    <color="green">B - Spawn
+    Boss Early</color>
+
+    Mouse - Camera
 
     WSAD - Movement
 
-    Left Mouse - Fire
+    Left Mouse -
+    Fire
 
-    Right
-    Mouse - Aim Sights
+    Right Mouse - Aim Sights
 
     R - Reload
 
     E  - Interact
 
-    Space - Jump
+    Space
+    - Jump
 
-    C
-    - Crouch
+    C - Crouch
 
     Shift - Run
 
     H - Heal
 
-    1-8 (OR) MouseScrollwheel - Equip
-    Weapon
+    1-8 (OR) MouseScrollwheel
+    - Equip Weapon
 
     Q - Open Weapon Wheel
 
     Z - Flamethrower
 
-    V - Quick Equip
-    Melee Arms
+    V - Quick
+    Equip Melee Arms
 
     Esc - Pause
 
@@ -627,7 +631,7 @@ MonoBehaviour:
   m_fontSize: 45
   m_fontSizeBase: 45
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -6994,7 +6998,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Shiv Karthikeyan
+  m_text: Karthik Ganesan
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 52e37b6731b3ec94396c3a4fa30d69f4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 52e37b6731b3ec94396c3a4fa30d69f4, type: 2}

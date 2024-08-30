@@ -30,6 +30,12 @@ public class Flamethrower : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        BossAI bossAI = other.transform.root.GetComponent<BossAI>();
+        if(bossAI != null)
+        {
+            bossAI.Burn();
+        }
+
         EnemyAI enemyAI = other.transform.root.GetComponent<EnemyAI>();
         if(enemyAI != null)
         {
@@ -39,6 +45,12 @@ public class Flamethrower : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
+        BossAI bossAI = other.transform.root.GetComponent<BossAI>();
+        if(bossAI != null)
+        {
+            bossAI.Burn();
+        }
+        
         EnemyAI enemyAI = other.transform.root.GetComponent<EnemyAI>();
         if(enemyAI != null)
         {
