@@ -7,4 +7,4 @@ The apocalypse has arrived, and the world is overrun by dark forces. As the last
 ⚔️ Key Features
 Epic Battles: Face waves of challenging enemies with dynamic combat mechanics.
 Immersive Environments: Explore a post-apocalyptic world filled with danger and hidden mysteries.
-Powerful Abilities: Unlock unique skills to gain an edge in combat.
+Powerful Abilities: Unlock unique skills to gain an edge in combat. 
