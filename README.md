@@ -1,4 +1,4 @@
-🔥 Hell's Warrior: Apocalyptic Nexus 🎮
+🔥** Hell's Warrior: Apocalyptic Nexus **🎮
 Step into a world where chaos reigns, and only the bravest can survive.
 
 🌍 Game Overview:
