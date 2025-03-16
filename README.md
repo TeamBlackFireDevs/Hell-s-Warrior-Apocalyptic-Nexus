@@ -1,3 +1,5 @@
+Play here: https://popsplash-games.itch.io/hells-warrior-apocalyptic-nexus
+
 🔥Hell's Warrior: Apocalyptic Nexus🎮
 Step into a world where chaos reigns, and only the bravest can survive.
 
